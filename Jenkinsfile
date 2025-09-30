@@ -1,4 +1,4 @@
-@Library('Shared_Library') _
+@Library('my-pv-library') _
 
 pipeline {
     agent any
