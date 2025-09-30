@@ -1,13 +1,2 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Test Hello') {
-            steps {
-                script {
-                    hello('Venky')
-                }
-            }
-        }
-    }
-}
+def call(String name) {
+    echo "Hello, ${name}!"
