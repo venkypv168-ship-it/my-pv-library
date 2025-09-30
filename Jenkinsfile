@@ -1,32 +1,47 @@
-@Library('my-pv-library') _
+@Library('Shared_Library') _
+
 pipeline {
     agent any
-  stages {
-        stage('Clean Workspace') {
-            steps {
-                echo 'Cleaning workspace'
-            }
-        }
+
+    stages {
         stage('welcome') {
             steps {
                 script {
-                    hello('linux')
+                    hello()
                 }
             }
         }
+
+        stage('Clean Workspace') {
+            steps {
+                script {
+                    cleanworkspace()
+                }
+            }
+        }
+
+        stage('Clone') {
+            steps {
+                script {
+                    clonerepo()
+                }
+            }
+        }
+
         stage('Build') {
             steps {
                 script {
-                    buildapp()
+                    build()
                 }
             }
         }
-        stage('deploy') {
+
+        stage('Deploy') {
             steps {
                 script {
-                    deployapp()
+                    deploy()
                 }
             }
-        }
-    }
+        }
+    }
 }
