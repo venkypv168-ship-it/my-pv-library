@@ -1,10 +1,3 @@
-pipeline {
-    agent any
-stage('Build') {
-            steps {
-                script {
-                    buildapp()
-                }
-            }
-        }
+def call () {
+    echo "Building Project..."    
 }
