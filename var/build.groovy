@@ -1,10 +1,10 @@
 pipeline {
     agent any
-    stages {
-        stage('welcome') {
+stage('Build') {
             steps {
                 script {
-                    hello('linux')
+                    buildapp()
                 }
             }
         }
+}
