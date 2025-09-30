@@ -1,2 +1,2 @@
-def call(String name) {
+def call(String name = 'linux') {
     echo "Hello, ${name}!"
