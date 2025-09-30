@@ -7,6 +7,7 @@ pipeline {
                 echo 'Cleaning workspace'
                 deleteDir()
             }
+        }
         stage('welcome') {
             steps {
                 script {
