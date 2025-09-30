@@ -8,19 +8,3 @@ pipeline {
                 }
             }
         }
-        stage('Build') {
-            steps {
-                script {
-                    buildapp()
-                }
-            }
-        }
-        stage('deploy') {
-            steps {
-                script {
-                    deployapp()
-                }
-            }
-        }
-    }
-}
