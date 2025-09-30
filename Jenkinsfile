@@ -1,3 +1,4 @@
+@Library('my-pv-library')
 pipeline {
     agent any
   stages {
@@ -6,7 +7,6 @@ pipeline {
                 echo 'Cleaning workspace'
                 deleteDir()
             }
-        }
         stage('welcome') {
             steps {
                 script {
