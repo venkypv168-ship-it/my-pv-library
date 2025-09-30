@@ -1,3 +1,3 @@
 def call () {
-    echo "Cloning the Repository , main branch"
+    echo "Cloning the Repository"
 }
