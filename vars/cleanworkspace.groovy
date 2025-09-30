@@ -1,3 +1,3 @@
 def call () {
-    echo "Cleaning Repository...!!!"
+    echo "Cleaning workspace..."
 }
